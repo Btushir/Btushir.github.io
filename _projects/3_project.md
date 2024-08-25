@@ -1,81 +1,55 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Securing smart home via traffic classification 
+description: abstract, paper and slides 
+img: 
+redirect: 
 importance: 3
 category: work
+giscus_comments: true
 ---
+# Abstract
+> IoT devices have become popular targets for various network attacks due to their lack of industry-wide security standards.
+In this work, we focus on the classification of smart home IoT devices and defending them against Distributed Denial of 
+Service (DDoS) attacks. The proposed framework protects smart homes by using VLAN-based network isolation. 
+This architecture includes two VLANs: one with non-verified devices and the other with verified devices, both of
+which are managed by a SDN controller. Lightweight, stateless flow-based features, including ICMP, TCP and UDP 
+protocol percentage, packet count and size, and IP diversity ratio, are proposed for efficient feature collection. 
+Further analysis is performed to minimize training data to run on resource-constrained edge devices in smart home networks. 
+Three popular machine learning models, including K-Nearest-Neighbors, Random Forest, and Support Vector Machines, 
+are used to classify IoT devices and detect different DDoS attacks based on TCP-SYN, UDP, and ICMP. The system’s 
+effectiveness and efficiency are evaluated by emulating a network consisting of an Open vSwitch, Faucet SDN controller,
+and flow traces of several IoT devices from two different testbeds. The proposed framework achieves an average accuracy of 
+97% in device classification and 98% in DDoS detection with average latency of 1.18 milliseconds.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+# Slides
+Download [here](/assets/pdf/sdhomeppt.pdf)
+<object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/sdhomeppt.pdf" width="100%" height="500" type='application/pdf'></object>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+# Paper
+Download [here](/assets/pdf/COMPSAC 2021.pdf)
+<object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/COMPSAC 2021.pdf" width="100%" height="800" type='application/pdf'></object>
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+[//]: # (```html)
 
-{% raw %}
+[//]: # (<div class="row justify-content-sm-center">)
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+[//]: # (  <div class="col-sm-8 mt-3 mt-md-0">)
 
-{% endraw %}
+[//]: # (    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %})
+
+[//]: # (  </div>)
+
+[//]: # (  <div class="col-sm-4 mt-3 mt-md-0">)
+
+[//]: # (    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %})
+
+[//]: # (  </div>)
+
+[//]: # (</div>)
+
+[//]: # (```)

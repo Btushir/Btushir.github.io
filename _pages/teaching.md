@@ -1,12 +1,13 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /Teaching Experience/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+#description: Served as a Teaching Assistant at Santa Clara University in California
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+At Santa Clara University, CA, I worked as a Teaching Assistant for courses like Operating Systems, Computer Networks, 
+C++, and Advanced Web Architecture. I really enjoyed holding office hours where I could help students one-on-one with 
+tough concepts. I also put together slides to make the material easier to understand. 
+This experience not only let me support the students but also helped me get a deeper grasp of the subjects myself
